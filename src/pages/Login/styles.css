@@ -1,0 +1,20 @@
+.body {
+    background: #26EFB4;
+    background: linear-gradient(#26EFB4, #07466F);
+}
+
+.logo {
+    height:50px;
+}
+
+.container-logo {
+    display: flex; 
+    justify-content: space-around;
+}
+
+.container {
+    min-height: 100%;
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+}
