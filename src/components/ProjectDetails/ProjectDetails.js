@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Row, Col, Card, CardTitle, CardBody } from 'reactstrap';
+import {Row, Col, Card, CardHeader, CardBody } from 'reactstrap';
 import styles from './ProjectDetails.module.css'
 
 class ProjectDetails extends Component {
@@ -8,7 +8,6 @@ class ProjectDetails extends Component {
             <div>
                 <Col sm="12" md={{ size: 10, offset: 1 }}>
                     <Card className={styles.card_container}>
-                        <CardTitle>Status dos Projetos</CardTitle>
                         <CardBody>
                             <Row>
                                 <Col className={styles.col_status_projetos}>
