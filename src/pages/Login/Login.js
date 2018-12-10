@@ -26,7 +26,7 @@ class Login extends Component {
                                     <h2>Entrar</h2>
                                 </Col>
                                 <Col className="container-logo">
-                                    <img className="logo" src={images.logo}/>
+                                    <img alt="Logo" className="logo" src={images.logo}/>
                                 </Col>
                             </Row>
                             <Form className="form">

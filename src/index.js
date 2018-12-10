@@ -7,12 +7,12 @@ import 'primeicons/primeicons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import * as serviceWorker from './serviceWorker';
 
-import { Login } from './pages'
+import { Login, Home } from './pages'
 
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
-            <Route path="/" exact={true} component={Login} />
+            <Route path="/" exact={true} component={Home} />
         </Switch>
     </ BrowserRouter>
     , document.getElementById('root'));
