@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import { Menu } from '../../components';
-import './styles.css'
+import { Menu, ProjectDetails } from '../../components';
+import styles from './Home.module.css'
+
 
 class Home extends Component {
     render() {
         return(
-            <div className="body">
+            <div className={styles.body}>
                 <Menu />
+                <ProjectDetails />
             </div>
         );
     }
