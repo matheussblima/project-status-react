@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Menu, ProjectDetails } from '../../components';
+import { Menu, ProjectDetails, List } from '../../components';
 import styles from './Home.module.css'
 
 
@@ -9,6 +9,7 @@ class Home extends Component {
             <div className={styles.body}>
                 <Menu />
                 <ProjectDetails />
+                <List />
             </div>
         );
     }
