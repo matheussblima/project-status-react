@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import {Panel} from 'primereact/panel';
 import {DataView, DataViewLayoutOptions} from "primereact/dataview";
 import {Button} from "primereact/button";
@@ -108,7 +109,9 @@ class List extends Component {
                         </Row>
                     </Col>
                     <Col md="4">
+                    <Link to="/Projeto">
                         <Button className={styles.button_editar_listItem} label="Editar" icon="pi pi-pencil" onClick={(e) => this.setState({ selectedProject: project, visible: true })}></Button>
+                    </Link>
                     </Col>
                 </Row>
             </div>

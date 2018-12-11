@@ -1,0 +1,15 @@
+.formulario_container {
+    margin-top: 32px
+}
+
+.row_formularios {
+    padding: 10px;
+}
+
+.card_formularios {
+    margin-top: 32px;
+}
+
+.span_resposavel_nome {
+    float: right;
+}

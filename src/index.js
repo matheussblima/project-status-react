@@ -7,12 +7,14 @@ import 'primeicons/primeicons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import * as serviceWorker from './serviceWorker';
 
-import { Login, Home } from './pages'
+import { Login, Home, Projeto } from './pages'
 
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
-            <Route path="/" exact={true} component={Home} />
+            <Route path="/" exact={true} component={Login} />
+            <Route path="/Home" exact={true} component={Home} />
+            <Route path="/Projeto" exact={true} component={Projeto} />
         </Switch>
     </ BrowserRouter>
     , document.getElementById('root'));

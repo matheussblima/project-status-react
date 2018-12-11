@@ -10,6 +10,7 @@ import {
     Button, 
     Card
   } from 'reactstrap';
+import { Link } from 'react-router-dom'
 import styles from './Login.module.css';
 import images from '../../config/image'
 
@@ -55,7 +56,9 @@ class Login extends Component {
                                     <Button color="link">Primeiro acesso? / Esquceu a senha?</Button>
                                 </FormGroup>
                             </Col>
-                            <Button color="success">Entrar</Button>
+                            <Link to="/Home">
+                                <Button color="success">Entrar</Button>
+                            </Link>
                             </Form>
                         </Card>
                     </Col>
