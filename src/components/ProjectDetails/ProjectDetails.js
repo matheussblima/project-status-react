@@ -1,42 +1,38 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import {Row, Col, Card, CardHeader, CardBody } from 'reactstrap';
 import styles from './ProjectDetails.module.css'
 
 class ProjectDetails extends Component {
     render() {
+        const { title, subtitle, color, count } = this.props;
+
         return(
             <div>
-                <Col sm="12" md={{ size: 10, offset: 1 }}>
+                <Col md="10">
                     <Card className={styles.card_container}>
-                        <CardBody>
-                            <Row>
-                                <Col className={styles.col_status_projetos}>
-                                    <h6 className={styles.title_tfel1} >Projetos em TFEL 1</h6> 
-                                    <h3  className={styles.info_tfel1} >50</h3>
-                                </Col>
-                                <Col className={styles.col_status_projetos}>
-                                    <h6 className={styles.title_tfel2} >Projetos em TFEL 2</h6> 
-                                    <h3  className={styles.info_tfel2} >50</h3>
-                                </Col>
-                                <Col className={styles.col_status_projetos}>
-                                    <h6 className={styles.title_tfel3}>Projetos em TFEL 3</h6> 
-                                    <h3  className={styles.info_tfel3}>50</h3>
-                                </Col>
-                                <Col className={styles.col_status_projetos}>
-                                    <h6 className={styles.title_execucao}>Execução</h6> 
-                                    <h3 className={styles.info_execucao}>50</h3>
-                                </Col>
-                                <Col>
-                                    <h6 className={styles.title_operacao}>Operação</h6> 
-                                    <h3 className={styles.info_operacao}>50</h3>
-                                </Col>
-                            </Row>
-                        </CardBody>
+                        <span className={styles.title_card}><b>{title}</b></span>
+                        <span className={styles.detailsCard}>{subtitle}</span>
+                        <span className={styles.count}>{count}</span>
                     </Card>
                 </Col>
             </div>
         );
     }
+}
+
+ProjectDetails.propTypes = {
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    color: PropTypes.string,
+    count: PropTypes.string
+};
+
+ProjectDetails.defaultProps = {
+    title: "FEL 1",
+    subtitle: "Quantidade de Projetos",
+    count: "12",
+    color: "#F45433"
 }
 
 export default ProjectDetails;

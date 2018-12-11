@@ -1,53 +1,28 @@
 .card_container {
-    margin: 32px 16px 16px 16px;
-    -webkit-box-shadow: 0px 3px 11px 1px rgb(201, 201, 201);
-    -moz-box-shadow: 0px 3px 11px 1px rgb(201, 201, 201);
-    box-shadow: 0px 3px 11px 1px rgb(201, 201, 201);
+    margin: 16px 4px;
+    position: relative;
+    padding: 16px;
+    border-radius: 10px;
 }
 
-
-.col_status_projetos {
-    border-style: solid;
-    border-width: 0px 2px 0px 0px;
-    border-right-color: rgb(204, 204, 204);
+.title_card {
+    font-size: 20px;
 }
 
-.title_tfel1 {
-    color: #FF520D;
+.detailsCard {
+    color: #000;
+    display: block;
+    margin-top: 10px;
 }
 
-.info_tfel1 {
-    color: #FF520D;
+.count {
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    padding: 7px 14px;
+    border-radius: 10px;
+    background-color: #FF520D;
 }
 
-.title_tfel2 {
-    color: #9D00FF;
-}
-
-.info_tfel2 {
-    color: #9D00FF;
-}
-
-.title_tfel3 {
-    color: #0CE86C;
-}
-
-.info_tfel3 {
-    color: #0CE86C;
-}
-
-.title_execucao {
-    color: #FFBD00;
-}
-
-.info_execucao{
-    color: #FFBD00;
-}
-
-.title_operacao {
-    color: #0DACFF;
-}
-
-.info_operacao{
-    color: #0DACFF;
-}
