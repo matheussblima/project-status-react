@@ -1,5 +1,5 @@
 import { Menu } from './Menu';
-import { ProjectDetails } from './ProjectDetails';
+import { ProjectDetails, GroupProjectDetails } from './ProjectDetails';
 import { List } from './List';
 
-export { Menu, ProjectDetails, List };
+export { Menu, ProjectDetails, GroupProjectDetails, List };
