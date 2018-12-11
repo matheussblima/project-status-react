@@ -7,7 +7,7 @@
     height:50px;
 }
 
-.container-logo {
+.container_logo {
     display: flex; 
     justify-content: space-around;
 }

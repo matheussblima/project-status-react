@@ -10,22 +10,22 @@ import {
     Button, 
     Card
   } from 'reactstrap';
-import './styles.css';
+import styles from './Login.module.css';
 import images from '../../config/image'
 
 
 class Login extends Component {
     render() {
         return(
-            <div className="body">
-                <Container className="container">
+            <div className={styles.body}>
+                <Container className={styles.container}>
                     <Col sm="12" md={{ size: 6, offset: 3 }}>
                         <Card body>
                             <Row>
                                 <Col>
                                     <h2>Entrar</h2>
                                 </Col>
-                                <Col className="container-logo">
+                                <Col className={styles.container_logo}>
                                     <img alt="Logo" className="logo" src={images.logo}/>
                                 </Col>
                             </Row>
